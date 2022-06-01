@@ -23,14 +23,16 @@ def stub_view(request, *args, **kwargs):
 
 class PostListView(ListView):
     queryset = Post.objects.exclude(published_date__exact=None).order_by(
-        "-published_date")
+        "-published_date"
+    )
     template_name = "list.html"
 
 
 class PostDetailView(DetailView):
     template_name = "blogging/detail.html"
     queryset = Post.objects.exclude(published_date__exact=None).order_by(
-        "-published_date")
+        "-published_date"
+    )
 
     def post(self, request, *args, **kwargs):
         try:
