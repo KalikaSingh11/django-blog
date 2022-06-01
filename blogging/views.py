@@ -6,7 +6,7 @@ from django.views.generic.detail import DetailView
 from django.http import Http404
 
 
-# Create your views here.
+# Create your views here..
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 
 
