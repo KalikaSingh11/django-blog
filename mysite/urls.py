@@ -18,13 +18,13 @@ from django.urls import path, include
 from django.urls.conf import include
 from django.contrib.auth.views import LoginView, LogoutView
 from rest_framework import routers
-from blogging.views import UserViewSet,PostViewSet, CategoryViewSet
+from blogging.views import UserViewSet, PostViewSet, CategoryViewSet
 
 router = routers.DefaultRouter()
 ##TODO: I still need to register some routers.
-router.register(r'users', UserViewSet)
-router.register(r'posts', PostViewSet)
-router.register(r'categories', CategoryViewSet)
+router.register(r"users", UserViewSet)
+router.register(r"posts", PostViewSet)
+router.register(r"categories", CategoryViewSet)
 
 
 urlpatterns = [
